@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elige tu espacio | SmartFit</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="espacios">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="contenedor-header">
+      <a class="logo" href="index.html" aria-label="SmartFit, inicio">
+        <span class="logo-nombre">Smart<span>Fit</span></span>
+        <span class="logo-lema">Entrena tu mejor versión</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-principal" aria-label="Abrir menú">☰</button>
+      <nav class="nav-principal" id="nav-principal" aria-label="Principal">
+        <ul>
+          <li><a href="rutina.html" aria-current="page">Tu espacio</a></li>
+          <li><a href="gimnasios.html">Gimnasios</a></li>
+          <li><a href="#">Plan Black</a></li>
+          <li><a href="#">Nuestro equipo Smart</a></li>
+          <li><a href="#">Promociones</a></li>
+          <li><a class="btn-nav" href="registro.html">¡Inscríbete ya!</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="contenedor" aria-labelledby="titulo-musculo">
+      <div class="banner" style="max-width:660px;margin-inline:auto">
+        <h1 id="titulo-musculo" style="font-family:var(--fuente-texto);font-size:1.8rem">Rutina</h1>
+      </div>
+
+      <h2 class="centrado">¿Eres nuevo usuario?</h2>
+      <p class="subtitulo-naranja" id="texto-espacios">Escoge uno de estos espacios para realizar tu rutina:</p>
+
+      <div class="grid-espacios" id="grid-espacios"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="contenedor-footer">
+      <a class="logo" href="index.html" aria-label="SmartFit, inicio">
+        <span class="logo-nombre">Smart<span>Fit</span></span>
+      </a>
+      <ul>
+        <li><a href="gimnasios.html">Gimnasios</a></li>
+        <li><a href="rutina.html">Tu espacio</a></li>
+        <li><a href="registro.html">Inscríbete</a></li>
+      </ul>
+      <p>&copy; <span id="anio">2026</span> SmartFit. Proyecto académico.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

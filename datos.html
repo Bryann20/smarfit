@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rellena tus datos | SmartFit</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="datos">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="contenedor-header">
+      <a class="logo" href="index.html" aria-label="SmartFit, inicio">
+        <span class="logo-nombre">Smart<span>Fit</span></span>
+        <span class="logo-lema">Entrena tu mejor versión</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-principal" aria-label="Abrir menú">☰</button>
+      <nav class="nav-principal" id="nav-principal" aria-label="Principal">
+        <ul>
+          <li><a href="rutina.html">Tu espacio</a></li>
+          <li><a href="gimnasios.html">Gimnasios</a></li>
+          <li><a href="#">Plan Black</a></li>
+          <li><a href="#">Nuestro equipo Smart</a></li>
+          <li><a href="#">Promociones</a></li>
+          <li><a class="btn-nav" href="registro.html">¡Inscríbete ya!</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="panel-datos" aria-labelledby="titulo-datos">
+      <div class="contenedor contenedor-angosto" style="padding-top:0;padding-bottom:0">
+        <div class="banner blanco">
+          <h1 id="titulo-datos">Rellena tus datos</h1>
+        </div>
+
+        <form id="form-datos" novalidate>
+          <div class="tabla-datos">
+            <label for="nombre">Nombre</label>
+            <div class="celda-input">
+              <input type="text" id="nombre" name="nombre" autocomplete="given-name" required>
+            </div>
+
+            <label for="peso">Peso</label>
+            <div class="celda-input">
+              <input type="number" id="peso" name="peso" inputmode="decimal" min="30" max="300" step="0.1" required>
+              <span class="unidad">Kg</span>
+            </div>
+
+            <label for="altura">Altura</label>
+            <div class="celda-input">
+              <input type="number" id="altura" name="altura" inputmode="numeric" min="100" max="250" required>
+              <span class="unidad">Cm</span>
+            </div>
+
+            <label for="edad">Edad</label>
+            <div class="celda-input">
+              <input type="number" id="edad" name="edad" inputmode="numeric" min="14" max="99" step="1" required>
+              <span class="unidad">Años</span>
+            </div>
+          </div>
+
+          <ul class="errores-datos" id="errores-datos" role="alert" aria-live="assertive"></ul>
+
+          <p style="text-align:right;margin-top:1.5rem">
+            <button type="submit" class="btn">Continuar</button>
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="contenedor-footer">
+      <a class="logo" href="index.html" aria-label="SmartFit, inicio">
+        <span class="logo-nombre">Smart<span>Fit</span></span>
+      </a>
+      <ul>
+        <li><a href="gimnasios.html">Gimnasios</a></li>
+        <li><a href="rutina.html">Tu espacio</a></li>
+        <li><a href="registro.html">Inscríbete</a></li>
+      </ul>
+      <p>&copy; <span id="anio">2026</span> SmartFit. Proyecto académico.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

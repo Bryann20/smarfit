@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ubícate | SmartFit</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="ubicate">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="contenedor-header">
+      <a class="logo" href="index.html" aria-label="SmartFit, inicio">
+        <span class="logo-nombre">Smart<span>Fit</span></span>
+        <span class="logo-lema">Entrena tu mejor versión</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-principal" aria-label="Abrir menú">☰</button>
+      <nav class="nav-principal" id="nav-principal" aria-label="Principal">
+        <ul>
+          <li><a href="rutina.html" aria-current="page">Tu espacio</a></li>
+          <li><a href="gimnasios.html">Gimnasios</a></li>
+          <li><a href="#">Plan Black</a></li>
+          <li><a href="#">Nuestro equipo Smart</a></li>
+          <li><a href="#">Promociones</a></li>
+          <li><a class="btn-nav" href="registro.html">¡Inscríbete ya!</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="contenedor" aria-labelledby="titulo-musculo">
+      <div class="banner" style="max-width:660px;margin-inline:auto">
+        <h1 id="titulo-musculo" style="font-family:var(--fuente-texto);font-size:1.8rem">Rutina</h1>
+      </div>
+
+      <div class="ubicacion">
+        <div class="plano" role="img" aria-label="Plano de referencia de la zona elegida">
+          <div>
+            <div class="pin" aria-hidden="true">📍</div>
+            <p class="texto-suave">Reemplaza este recuadro con la foto o plano de la zona</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="banner" style="margin-bottom:1rem">
+            <h2 style="margin:0;font-family:var(--fuente-texto)">Ubícate aquí</h2>
+          </div>
+          <h3 id="nombre-espacio"></h3>
+          <p class="texto-suave" id="detalle-espacio"></p>
+          <p style="margin-top:2rem">
+            <a class="btn btn-gris btn-grande" id="btn-empezar" href="ejercicios.html">Empecemos tu rutina</a>
+          </p>
+          <p><a href="espacios.html">← Elegir otro espacio</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="contenedor-footer">
+      <a class="logo" href="index.html" aria-label="SmartFit, inicio">
+        <span class="logo-nombre">Smart<span>Fit</span></span>
+      </a>
+      <ul>
+        <li><a href="gimnasios.html">Gimnasios</a></li>
+        <li><a href="rutina.html">Tu espacio</a></li>
+        <li><a href="registro.html">Inscríbete</a></li>
+      </ul>
+      <p>&copy; <span id="anio">2026</span> SmartFit. Proyecto académico.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
