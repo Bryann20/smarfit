@@ -226,7 +226,7 @@ main {
 .btn {
   display: inline-block;
   background: var(--naranja);
-  color: var(--blanco);
+  color: var(--negro);
   border: 0;
   border-radius: 3px;
   padding: 1rem 1.8rem;
